@@ -65,7 +65,7 @@ body {
   text-decoration: none;
   color: #000;
 }
-.span {
+.destribution-span {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -83,7 +83,6 @@ body {
   text-decoration: none;
 }
 .catalog-filter-title {
-  font-family: "Rubik", sans-serif;
   font-weight: 800;
   line-height: 20px;
   letter-spacing: -0.02em;
