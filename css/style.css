@@ -32,19 +32,9 @@ li {
   margin: 0;
   padding: 0;
 }
-body {
-  font-family: "Rubik", sans-serif;
-  font-style: 18px;
-  font-weight: normal;
-  line-height: 30px;
-  background-color: #fff;
-  color: #444;
-}
-.main-header {
-  background-color: #FFE17F;
-}
-.navigation-list {
-  list-style: none;
+.container {
+  width: 1160px;
+  margin: 0 auto;
 }
 .link,
 .title {
@@ -58,12 +48,138 @@ body {
   line-height: 50px;
   color: #000;
 }
+html {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: "Rubik", sans-serif;
+  font-style: 18px;
+  font-weight: normal;
+  line-height: 30px;
+  background-color: #fff;
+  color: #444;
+  margin: 0;
+}
+.main-container {
+  flex-grow: 1;
+}
+.header-container {
+  width: 1160px;
+  margin: 0 auto;
+  background-color: #FFE17F;
+}
+.main-search input {
+  width: 480px;
+}
+.header-logo {
+  margin-left: 42.5px;
+}
+.header-inner {
+  display: flex;
+  width: 1075px;
+  margin: 0 auto;
+}
+.header-list {
+  display: flex;
+  list-style: none;
+  margin-left: auto;
+}
+.header-list-link {
+  font-family: "Rubik";
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+}
+.header-list-item:first-child{
+  width: 245px;
+  padding-left: 24px;
+}
+.header-list-item:nth-last-of-type(2) {
+  width: 120px;
+  padding-left: 15px;
+}
+.header-list-item:last-child {
+  width: 141px;
+  padding-left: 14px;
+}
+.navigation {
+  width: 1075px;
+  margin: 0 auto;
+}
+.navigation-list {
+  display: flex;
+}
+.navigation-item {
+  width: 140px;
+  padding-right: 19px;
+}
+.navigation-item:first-child {
+  width: 236px;
+  padding-right: 304px;
+}
+.navigation-item:last-child {
+  padding-left: 62px;
+}
 .navigation-link {
   text-transform: uppercase;
   line-height: 21px;
   letter-spacing: 0.2em;
   text-decoration: none;
   color: #000;
+}
+.promo-description {
+  display: flex;
+}
+.services-list {
+  display: flex;
+}
+.services-item {
+  width: 160px;
+  padding-right: 40px;
+}
+.services-item:last-child {
+  padding-right: 0;
+}
+.services-item-img {
+  width: 160px;
+  height: 160px;
+  background-image: url(../img/services/services-1.png);
+  background-color: #FFE17F;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: inherit;
+  margin-right: 40px;
+}
+.services-item-img-2 {
+  background-image: url(../img/services/services-2.png);
+}
+.services-item-img-3 {
+  background-image: url(../img/services/services-3.png);
+}
+.services-item-img-4 {
+  background-image: url(../img/services/services-4.png);
+}
+.services-item-img-5 {
+  background-image: url(../img/services/services-5.png);
+}
+.services-item-img-6 {
+  background-image: url(../img/services/services-6.png);
+  margin-right: 0;
+}
+.services-item-img img {
+  display: none;
+}
+.services-link {
+  display: block;
+  width: 160px;
+}
+.about-us-container {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
 }
 .destribution-span {
   font-family: "Raleway", sans-serif;
@@ -74,6 +190,20 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000;
+}
+.catalog-products {
+  display: flex;
+}
+.catalog-filter-group {
+  width: 200px;
+  margin: 0;
+  padding: 0;
+}
+.catalog-filter-btn {
+  width: 200px;
+}
+.sortyng-type {
+  width: 386px;
 }
 .catalog-list-link {
   font-size: 16px;
@@ -169,10 +299,23 @@ body {
   line-height: 24px;
   letter-spacing: -0.02em;
 }
-.advantages {
+.advantages-container {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
   background-color: #F0F0F0;
 }
 .advantages-link {
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+.advantages-special {
+  display: block;
+  width: 1160px;
+  margin: 0 auto;
   font-size: 20px;
   line-height: 23px;
   text-align: center;
@@ -219,11 +362,28 @@ body {
 .main-footer {
   background-color: #444444;
 }
+.footer-container {
+  width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
 .footer-address {
   font-size: 16px;
   line-height: 19px;
   color: #fff;
   font-style: normal;
+}
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 460px;
+}
+
+.footer-socials-list {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
 }
 .footer-nav-link {
   font-size: 18px;
