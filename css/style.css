@@ -205,12 +205,20 @@ body {
 .sortyng-type {
   width: 386px;
 }
+.catalog-list {
+  display: flex;
+}
 .catalog-list-link {
+  display: block;
+  margin-right: 35px;
   font-size: 16px;
   line-height: 19px;
   color: #000;
   opacity: 0.6;
   text-decoration: none;
+}
+.catalog-list-link:last-child {
+  margin-right: 0;
 }
 .catalog-filter-title {
   font-weight: 800;
@@ -256,6 +264,12 @@ body {
   text-decoration: none;
   color: #000;
 }
+.pagination {
+  display: flex;
+  width: 760px;
+  background-color: #EBEBEB;
+  padding: 27px 30px 24px 29px;
+}
 .pagination-show-more,
 .pagination-link {
   font-family: "Raleway",sans-serif;
@@ -269,12 +283,23 @@ body {
   text-decoration: none;
   color: #000;
 }
-.pagination-link-number {
+.pagination-link-number,
+.pagination-triple-point {
   font-size: 16px;
   line-height: 19px;
   text-align: center;
   opacity: 0.3;
   text-decoration: none;
+  margin-right: 30px;
+}
+.pagination-link-number-last {
+  margin-right: 0;
+}
+.pagination-prev {
+  margin-right: 205px;
+}
+.pagination-next {
+  margin-left: 205px;
 }
 .promo-link {
   font-size: 18px;
