@@ -5,28 +5,28 @@
   font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
-  src: url(fonts/rubik-400.woff2) format("woff2");
+  src: url(../fonts/rubik/rubik-400.woff2) format("woff2");
   font-display: swap;
 }
 @font-face {
   font-family: "Rubik";
   font-style: normal;
   font-weight: 700;
-  src: url(fonts/rubik-700.woff2) format("woff2");
+  src: url(../fonts/rubik/rubik-700.woff2) format("woff2");
   font-display: swap;
 }
 @font-face {
   font-family: "Rubik";
   font-style: normal;
   font-weight: 800;
-  src: url(fonts/rubik-800.woff2) format("woff2");
+  src: url(../fonts/rubik/rubik-800.woff2) format("woff2");
   font-display: swap;
 }
 @font-face {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 800;
-  src: url(fonts/raleway-800.woff2) format("woff2");
+  src: url(../fonts/raleway/raleway-800.woff2) format("woff2");
   font-display: swap;
 }
 h1,
@@ -298,17 +298,37 @@ body {
   margin: 0;
   padding: 0;
 }
+.product-card-item {
+  width: 360px;
+  margin-bottom: 45px;
+}
+.product-card-inner {
+  display: flex;
+  justify-content: space-between;
+}
+.product-card-title {
+  display: block;
+  width: 280px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
 .product-card-link {
+  display: block;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: -0.02em;
   color: #000;
   text-decoration: none;
+  margin-bottom: 30px;
 }
 .product-card-price {
   font-size: 18px;
   line-height: 21px;
   text-align: right;
+  font-weight: normal;
 }
 .product-card-info {
   font-family: "Raleway",sans-serif;
@@ -321,10 +341,14 @@ body {
   text-decoration: none;
   color: #000;
 }
+.pagination-inner {
+  width: 760px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #EBEBEB;
+}
 .pagination {
   display: flex;
-  width: 760px;
-  background-color: #EBEBEB;
   padding: 0;
   margin: 0;
   padding: 27px 30px 24px 29px;
@@ -357,10 +381,12 @@ body {
   margin-right: 0;
 }
 .pagination-prev {
-  margin-right: 205px;
+  align-self: center;
+  margin-left: 30px;
 }
 .pagination-next {
-  margin-left: 205px;
+  align-self: center;
+  margin-right: 30px;
 }
 .promo-link {
   display: block;
