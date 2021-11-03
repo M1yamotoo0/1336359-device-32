@@ -13,7 +13,7 @@
       <img class="header-logo" src="img/header-logo.svg" width="145" height="36" alt="Логотип интернет-магазина Device">
       <div class="header-inner">
         <form class="main-search">
-          <input class="header-search" type="search" value="Поиск по сайту">
+          <input class="header-search" type="search" placeholder="Поиск по сайту">
           <button class="search-btn" type="submit">Найти</button>
         </form>
         <ul class="header-list navigation-user">
@@ -29,7 +29,7 @@
             </a>
           </li>
           <li class="header-list-item">
-            <a class="header-list-link link" href="#">
+            <a class="header-list-link header-list-compare link" href="#">
               <svg class="compare-svg" width="10" height="12" fill="none" aria-hidden="true" focusable="false"
                 xmlns="http://www.w3.org/2000/svg">
                 <path d="M6 0H4v12h2V0ZM2 4H0v8h2V4ZM10 3H8v9h2V3Z" fill="#000" />
@@ -103,45 +103,53 @@
     <h1 class="visually-hidden">HTML Academy: Девайс</h1>
     <section class="promo">
       <div class="container">
-        <div class="promo-gallery">
-          <button class="slider-button slider-prev" type="button">
-            <span class="visually-button">Предыдущее фото</span>
-          </button>
-          <button class="slider-button slider-next" type="button">
-            <span class="visually-hidden">Следующее фото</span>
-          </button>
-
-          <ol class="slider-pagination">
-            <li class="slider-pagination-item">
-              <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                <span class="visually-hidden">1 фото</span>
-              </button>
-            </li>
-            <li class="slider-pagination-item">
-              <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                <span class="visually-hidden">2 фото</span>
-              </button>
-            </li>
-            <li class="slider-pagination-item">
-              <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                <span class="visually-hidden">3 фото</span>
-              </button>
-            </li>
-          </ol>
-        </div>
         <div class="promo-description">
-          <div class="promo-desr-img">
+          <div class="promo-gallery">
             <img class="silder-image" src="img/slider/slider-1.png" width="560" height="560"
               alt="Квадрокоптер с мощным лазером, замаскированным под камеру">
+            <div class="promo-nav">
+              <button class="slider-button slider-prev" type="button">
+                <svg width="20" height="60" viewBox="0 0 20 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 60H3.5L20 30L3.5 0H0L16.2 30L0 60Z" fill="black" />
+                </svg>
+                <span class="visually-hidden">Предыдущее фото</span>
+              </button>
+              <button class="slider-button slider-next" type="button">
+                <svg width="20" height="60" viewBox="0 0 20 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 60H3.5L20 30L3.5 0H0L16.2 30L0 60Z" fill="black" />
+                </svg>
+                <span class="visually-hidden">Следующее фото</span>
+              </button>
+            </div>
           </div>
           <div class="promo-descr-text">
+            <span class="slider-number">01</span>
             <p class="promo-title title">Порхает как бабочка,
               жалит как пчела!</p>
             <p class="promo-text">
               Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную
               камеру.
             </p>
-            <a href="" class="promo-link link">Подробнее</a>
+            <div class="slider-descr-nav">
+              <a href="" class="promo-link link">Подробнее</a>
+              <ol class="slider-pagination">
+                <li class="slider-pagination-item">
+                  <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                    <span class="visually-hidden">1 фото</span>
+                  </button>
+                </li>
+                <li class="slider-pagination-item">
+                  <button class="slider-pagination-button" type="button">
+                    <span class="visually-hidden">2 фото</span>
+                  </button>
+                </li>
+                <li class="slider-pagination-item">
+                  <button class="slider-pagination-button" type="button">
+                    <span class="visually-hidden">3 фото</span>
+                  </button>
+                </li>
+              </ol>
+            </div>
             <table class="promo-table">
               <tr>
                 <th>800 м</th>
@@ -154,17 +162,52 @@
             </table>
           </div>
         </div>
-        <div class="promo-description">
-          <div class="promo-desr-img">
-            <img class="slider-image" src="img/slider/slider-2.png" width="560" height="560" alt="Фитнес-браслет">
+        <div class="promo-description visually-hidden">
+          <div class="promo-gallery">
+            <img class="silder-image" src="img/slider/slider-1.png" width="560" height="560"
+              alt="Квадрокоптер с мощным лазером, замаскированным под камеру">
+            <div class="promo-nav">
+              <button class="slider-button slider-prev" type="button">
+                <svg width="20" height="60" viewBox="0 0 20 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 60H3.5L20 30L3.5 0H0L16.2 30L0 60Z" fill="black" />
+                </svg>
+                <span class="visually-hidden">Предыдущее фото</span>
+              </button>
+              <button class="slider-button slider-next" type="button">
+                <svg width="20" height="60" viewBox="0 0 20 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 60H3.5L20 30L3.5 0H0L16.2 30L0 60Z" fill="black" />
+                </svg>
+                <span class="visually-hidden">Следующее фото</span>
+              </button>
+            </div>
           </div>
           <div class="promo-descr-text">
+            <span class="slider-number">02</span>
             <p class="promo-title title">Худеем
               правильно!</p>
             <p class="promo-text">
               Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
             </p>
-            <a href="" class="promo-link link">Подробнее</a>
+            <div class="slider-descr-nav">
+              <a href="" class="promo-link link">Подробнее</a>
+              <ol class="slider-pagination">
+                <li class="slider-pagination-item">
+                  <button class="slider-pagination-button" type="button">
+                    <span class="visually-hidden">1 фото</span>
+                  </button>
+                </li>
+                <li class="slider-pagination-item">
+                  <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                    <span class="visually-hidden">2 фото</span>
+                  </button>
+                </li>
+                <li class="slider-pagination-item">
+                  <button class="slider-pagination-button" type="button">
+                    <span class="visually-hidden">3 фото</span>
+                  </button>
+                </li>
+              </ol>
+            </div>
             <table class="promo-table">
               <tr>
                 <th>48 часов</th>
@@ -175,21 +218,53 @@
             </table>
           </div>
         </div>
-        <div class="promo-description">
-          <div class="promo-desr-img">
-            <img class="slider-image" src="img/slider/slider-3.png" width="560" height="560" alt="Длинная селфи-палка">
+        <div class="promo-description visually-hidden">
+          <div class="promo-gallery">
+            <img class="silder-image" src="img/slider/slider-1.png" width="560" height="560"
+              alt="Квадрокоптер с мощным лазером, замаскированным под камеру">
+            <div class="promo-nav">
+              <button class="slider-button slider-prev" type="button">
+                <svg width="20" height="60" viewBox="0 0 20 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 60H3.5L20 30L3.5 0H0L16.2 30L0 60Z" fill="black" />
+                </svg>
+                <span class="visually-hidden">Предыдущее фото</span>
+              </button>
+              <button class="slider-button slider-next" type="button">
+                <svg width="20" height="60" viewBox="0 0 20 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 60H3.5L20 30L3.5 0H0L16.2 30L0 60Z" fill="black" />
+                </svg>
+                <span class="visually-hidden">Следующее фото</span>
+              </button>
+            </div>
           </div>
           <div class="promo-descr-text">
+            <span class="slider-number">03</span>
             <p class="promo-title title">Делай селфи,
               как Бен Стиллер! </p>
             <p class="promo-text">
               Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом
-              всего
-              5
-              кг.
-
+              всего 5 кг.
             </p>
-            <a class="promo-link link" href="">Подробнее</a>
+            <div class="slider-descr-nav">
+              <a href="" class="promo-link link">Подробнее</a>
+              <ol class="slider-pagination">
+                <li class="slider-pagination-item">
+                  <button class="slider-pagination-button" type="button">
+                    <span class="visually-hidden">1 фото</span>
+                  </button>
+                </li>
+                <li class="slider-pagination-item">
+                  <button class="slider-pagination-button" type="button">
+                    <span class="visually-hidden">2 фото</span>
+                  </button>
+                </li>
+                <li class="slider-pagination-item">
+                  <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                    <span class="visually-hidden">3 фото</span>
+                  </button>
+                </li>
+              </ol>
+            </div>
             <table class="promo-table">
               <tr>
                 <th>8,5 м</th>
@@ -298,7 +373,7 @@
             <p class="advantages-text">Мы с удовольствием доставим ваш товар прямо
               к вашему подъезду совершенно бесплатно! Ведь
               мы неплохо заработаем, поднимая его на ваш этаж.</p>
-            <svg width="136" height="164" fill="none" aria-hidden="true" focusable="false"
+            <svg class="advantages-svg" width="136" height="164" fill="none" aria-hidden="true" focusable="false"
               xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#a)">
                 <path
@@ -321,7 +396,7 @@
               </defs>
             </svg>
           </li>
-          <li class="advantages-description-item">
+          <li class="advantages-description-item visually-hidden">
             <h2 class="advantages-title title">Гарантия</h2>
             <p class="advantages-text">Если из-за возгорания купленного у нас товара у вас
               сгорит дом — не переживайте, мы выдадим вам новый.
@@ -361,7 +436,7 @@
               </defs>
             </svg>
           </li>
-          <li class="advantages-description-item">
+          <li class="advantages-description-item visually-hidden">
             <h2 class="advantages-title title">Кредит</h2>
             <p class="advantages-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас
               наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
@@ -385,11 +460,11 @@
       </div>
     </section>
     <a class="advantages-special-link" href="#">Доставим редкий товар под заказ
-      <svg class="advantages-special-svg" width="2" height="12" aria-hidden="true" focusable="false"
-          viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M2 0H0V2H2V0Z" fill="black" />
-          <path d="M2 4H0V12H2V4Z" fill="black" />
-        </svg>
+      <svg class="advantages-special-svg" width="2" height="12" aria-hidden="true" focusable="false" viewBox="0 0 2 12"
+        fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2 0H0V2H2V0Z" fill="black" />
+        <path d="M2 4H0V12H2V4Z" fill="black" />
+      </svg>
       <div class="advantages-info-element"></div>
     </a>
     <div class="about-us-container">
@@ -446,8 +521,8 @@
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <p class="newsletter-email">
             <label class="visually-hidden" for="newsletter-email">Email</label>
-            <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
-              required>
+            <input class="field field-invalid" placeholder="Ваш e-mail" type="email" name="newsletter-email"
+              id="newsletter-email" required>
           </p>
           <button class="button newsletter-button" type="submit">
             Подписаться
