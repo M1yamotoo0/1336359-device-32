@@ -13,7 +13,7 @@
       <img class="header-logo" src="img/header-logo.svg" width="145" height="36" alt="Логотип интернет-магазина Device">
       <div class="header-inner">
         <form class="main-search">
-          <input class="header-search" type="search" placeholder="Поиск по сайту">
+          <input class="header-search" type="search" value="Поиск по сайту">
           <button class="search-btn" type="submit">Найти</button>
         </form>
         <ul class="header-list navigation-user">
@@ -29,7 +29,7 @@
             </a>
           </li>
           <li class="header-list-item">
-            <a class="header-list-link header-list-compare link" href="#">
+            <a class="header-list-link link" href="#">
               <svg class="compare-svg" width="10" height="12" fill="none" aria-hidden="true" focusable="false"
                 xmlns="http://www.w3.org/2000/svg">
                 <path d="M6 0H4v12h2V0ZM2 4H0v8h2V4ZM10 3H8v9h2V3Z" fill="#000" />
@@ -47,6 +47,43 @@
               </svg>
               Корзина
             </a>
+            <ul class="popover popover-cart">
+              <li class="popover-content">
+                <a class="popover-link" href="#">
+                  <img class="popover-img" src="img/popover/product-1-small.jpg" alt="Иконка селфи-палки" width="41"
+                    height="43">
+                  <p class="popover-text">
+                    Любительская<br>
+                    селфи-палка
+                  </p>
+                </a>
+                <button class="close-content-btn">
+                  <span class="visually-hidden">Удалить из корзины</span>
+                </button>
+              </li>
+              <li class="popover-content">
+                <a class="popover-link" href="#">
+                  <img class="popover-img" src="img/popover/product-2-small.jpg" alt="Иконка селфи-палки" width="41"
+                    height="43">
+                  <p class="popover-text">
+                    Профессиональная<br>
+                    селфи-палка
+                  </p>
+                </a>
+                <button class="close-content-btn">
+                  <span class="visually-hidden">Удалить из корзины</span>
+                </button>
+              </li>
+              <li class="popover-products">
+                <p class="popover-products-text">Товаров: 2</p>
+                <p class="popover-products-text">Сумма: 2000 ₽</p>
+              </li>
+              <li class="popover-btn-inner">
+                <button class="popover-btn">
+                  Открыть корзину
+                </button>
+              </li>
+            </ul>
           </li>
         </ul>
       </div>
@@ -370,8 +407,8 @@
         <ul class="advantages-description-list">
           <li class="advantages-description-item">
             <h2 class="advantages-title title">Доставка</h2>
-            <p class="advantages-text">Мы с удовольствием доставим ваш товар прямо
-              к вашему подъезду совершенно бесплатно! Ведь
+            <p class="advantages-text">Мы с удовольствием доставим ваш товар прямо<br>
+              к вашему подъезду совершенно бесплатно! Ведь<br>
               мы неплохо заработаем, поднимая его на ваш этаж.</p>
             <svg class="advantages-svg" width="136" height="164" fill="none" aria-hidden="true" focusable="false"
               xmlns="http://www.w3.org/2000/svg">
@@ -487,14 +524,12 @@
             ТоксБерри
           </li>
         </ul>
-        <div class="about-us-inner">
-          <a class="about-us-link link" href="">Подробнее о нас</a>
-        </div>
+        <a class="about-us-link about-us-link-left link" href="">Подробнее о нас</a>
       </section>
       <section class="contacts">
         <h2 class="contacts-title title">Контакты</h2>
         <p class="contacts-text">Вы можете забрать товар сами, заехав в наш офис.
-          Заодно, сможете проверить работоспособность покупки. </p>
+          Заодно,сможете проверить работоспособность покупки. </p>
         <h3 class="contacts-subtitle">Интернет-магазин «Девайс»</h3>
         <address class="contacts-adress-text">
           Санкт-Петербург, набережная реки Карповки, 5, литера П.<br>
@@ -505,9 +540,7 @@
           <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
           <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
         </ul>
-        <div class="contacts-inner">
-          <a class="about-us-link link" href="">Напишите нам</a>
-        </div>
+        <a class="about-us-link contacts-link link" href="">Напишите нам</a>
       </section>
     </div>
     <section class="destribution">
@@ -515,13 +548,13 @@
         <div class="destribution-container">
           <p class="destribution-title title">Подпишитесь
             на рассылку</p>
-          <p class="destribution-text">Еженедельный дайджест с обзорами новинок,
+          <p class="destribution-text">Еженедельный дайджест с обзорами новинок,<br>
             длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
         </div>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <p class="newsletter-email">
             <label class="visually-hidden" for="newsletter-email">Email</label>
-            <input class="field field-invalid" placeholder="Ваш e-mail" type="email" name="newsletter-email"
+            <input class="field field-invalid" value="Ваш e-mail" type="email" name="newsletter-email"
               id="newsletter-email" required>
           </p>
           <button class="button newsletter-button" type="submit">
@@ -538,7 +571,7 @@
         <img class="footer-logo" src="img/footer-logo.svg" width="145" height="36"
           alt="Логотип интернет-магазина Device">
         <address class="footer-address">
-          Санкт-Петербург, набережная<br>реки Карповки, 5, литера П.
+          Санкт-Петербург ,набережная<br>реки Карповки, 5, литера П.
         </address>
       </section>
       <section class="footer-middle">
