@@ -190,10 +190,10 @@
                 <div class="range-wrapper-inputs">
                   <label class="catalog-filter-label">
                     <span class="catalog-filter-span">от</span> <input class="range-input" type="number" value="0"
-                      name="min-price">
+                      name="min-price" style="width: 15px">
                   </label>
                   <label class="catalog-filter-label">
-                    до <input class="range-input" type="number" value="5000" name="max-price" style="width: 37px">
+                    до <input class="range-input" type="number" value="5000" name="max-price" style="width: 50px">
                   </label>
                 </div>
               </div>
@@ -281,13 +281,20 @@
           </select>
           <button class="visually-hidden" type="submit">Отсортировать продукты</button>
         </form>
-        <a href="#" class="button">
-          <span class="visually-hidden">По меньшинству</span>
-        </a>
-        <a href="#" class="button button-light">
-          <span class="visually-hidden">По большинству</span>
-        </a>
-
+        <div class="sort-buttons">
+          <a href="#" class="button">
+            <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.5 10L0 0H11" fill="black"/>
+              </svg>
+            <span class="visually-hidden">По меньшинству</span>
+          </a>
+          <a href="#" class="button button-light">
+            <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.5 10L0 0H11" fill="black"/>
+              </svg>
+            <span class="visually-hidden">По большинству</span>
+          </a>
+        </div>
         <ul class="product-card-list">
           <li class="product-card-item">
             <a class="product-card-link" href="#">
@@ -475,35 +482,48 @@
           <div class="modal-group-inner">
             <p class="field-group">
               <label class="modal-form-title" for="full-name">Ваше имя:</label>
-              <input class="full-name-form-field field" type="text" id="full-name" name="full-name"
+              <input class="full-name-form-field modal-field" type="text" id="full-name" name="full-name"
                 placeholder="Имя Фамилия">
               <span class="full-name-invalid field-span">Пожалуйста, представьтесь</span>
             </p>
             <p class="field-group">
               <label class="modal-form-title" for="email">Ваш e-mail:</label>
-              <input class="email-form-field field" type="email" id="email" name="email"
-                placeholder="krasotka92@mail.ru">
+              <input class="email-form-field modal-field" type="email" id="email" name="email"
+                value="krasotka92@mail.ru">
               <span class="email-valid field-span">Забавный у вас адрес</span>
             </p>
           </div>
           <div class="modal-group-inner">
             <p class="field-group">
               <label class="modal-form-title" for="more">Что нужно привезти:</label>
-              <input class="more-form-field field" type="text" id="more" name="email"
+              <input class="more-form-field modal-field" type="text" id="more" name="email"
                 placeholder="В свободной форме">
             </p>
-            <p class="field-group">
-            <div class="quantity-inner">
-              <label class="modal-form-title" for="quantity">Количество:</label>
-              <button class="modal-quantity-btn quantity-minus"></button>
-              <input class="quantity-form-field field" type="text" id="quantity" name="quantity" placeholder="1">
-              <button class="modal-quantity-btn quantity-plus"></button>
-            </div>
+            <p class="field-group field-quantity">
+              <label class="modal-form-title modal-form-quantity" for="quantity">Количество:</label>
+              <span class="quantity-span">i</span>
+              <button class="modal-quantity-btn quantity-minus" type="button">
+                <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16 0H0V2H16V0Z" fill="black" />
+                </svg>
+              </button>
+              <input class="quantity-form-field modal-field" type="text" id="quantity" name="quantity" placeholder="1">
+              <button class="modal-quantity-btn quantity-plus" type="button">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z" fill="black" />
+                </svg>
+              </button>
             </p>
           </div>
           <button class="modal-btn" type="submit">
             Отправить
           </button>
+          <div class="delivery-info">
+            <p class="delivery-info-text">
+              Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
+              к провозу багажа.
+            </p>
+          </div>
         </form>
       </section>
     </div>
