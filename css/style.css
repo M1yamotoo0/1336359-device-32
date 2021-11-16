@@ -81,12 +81,13 @@ body {
 .main-container {
   flex-grow: 1;
   margin-top: 39px;
+  z-index: -2;
 }
 .header-container {
   width: 1160px;
   margin: 0 auto;
   background-color: #FFE17F;
-  padding-bottom: 155px;
+  padding-bottom: 118px;
 }
 .main-catalog {
   margin-bottom: 37px;
@@ -385,8 +386,10 @@ body {
   color: rgba(0, 0, 0, 0.3);
 }
 .navigation {
+  position: relative;
   display: flex;
   margin-left: 20px;
+  margin-bottom: 38px;
 }
 .navigation-catalog-list {
   list-style: none;
@@ -442,9 +445,18 @@ body {
   opacity: 0;
 }
 .navigation-catalog-inner {
+  width: 1160px;
+  position: absolute;
+  left: 70px;
+  top: 222px;
   display: grid;
-  grid-template-columns: repeat(3, 200px);
-  gap: 30px;
+  grid-template-columns: 200px 163px 200px;
+  gap: 39px;
+  font-size: 16px;
+  line-height: 18px;
+  padding-left: 58px;
+  padding-bottom: 21px;
+  background-color: #FFE17F;
 }
 .navigation-catalog-show {
   display: none;
@@ -453,6 +465,7 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-bottom: 18px;
 }
 .navigation-sub-link {
   text-decoration: none;
@@ -518,6 +531,7 @@ body {
   color: #fff;
   right: 49px;
   top: -40px;
+  z-index: -1;
 }
 .promo-gallery {
   display: flex;
@@ -1942,6 +1956,7 @@ body {
   background-image: url(../img/icons/mail.svg);
   background-repeat: no-repeat;
   background-position: center right 20px;
+  color: #000;
 }
 .more-form-field {
   width: 560px;
