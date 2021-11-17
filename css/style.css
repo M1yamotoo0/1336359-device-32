@@ -81,7 +81,6 @@ body {
 .main-container {
   flex-grow: 1;
   margin-top: 39px;
-  z-index: -2;
 }
 .header-container {
   width: 1160px;
@@ -96,7 +95,7 @@ body {
 }
 .header-catalog-container {
   width: 1160px;
-  padding-bottom: 42px;
+  padding-bottom: 4px;
   margin: 0 auto;
   background-color: #FFE17F;
 }
@@ -185,7 +184,7 @@ body {
 .header-list-link {
   border-radius: 20px;
   padding: 10px 25px 10px 10px;
-  font-family: "Rubik";
+  font-family: "Rubik", sans-serif;
   font-size: 16px;
   line-height: 19px;
   font-weight: 400;
@@ -399,7 +398,7 @@ body {
 }
 .navigation-catalog-link {
   position: relative;
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
@@ -447,15 +446,15 @@ body {
 .navigation-catalog-inner {
   width: 1160px;
   position: absolute;
-  left: 70px;
-  top: 222px;
+  left: -20px;
+  top: 79px;
   display: grid;
   grid-template-columns: 200px 163px 200px;
   gap: 39px;
   font-size: 16px;
   line-height: 18px;
-  padding-left: 58px;
-  padding-bottom: 21px;
+  padding-left: 60px;
+  padding-bottom: 38px;
   background-color: #FFE17F;
 }
 .navigation-catalog-show {
@@ -466,6 +465,9 @@ body {
   margin: 0;
   padding: 0;
   margin-bottom: 18px;
+}
+.navigation-sub-item:not(.navigation-sub-item:last-child) {
+  margin-bottom: 19px;
 }
 .navigation-sub-link {
   text-decoration: none;
@@ -516,22 +518,12 @@ body {
   opacity: 0.3;
 }
 .promo {
-  margin-bottom: 67px;
+  margin-bottom: 66px;
 }
 .promo-descr-text {
   position: relative;
   width: 560px;
   margin-top: -28px;
-}
-.slider-number {
-  position: absolute;
-  font-weight: 800;
-  font-size: 180px;
-  line-height: 30px;
-  color: #fff;
-  right: 49px;
-  top: -40px;
-  z-index: -1;
 }
 .promo-gallery {
   display: flex;
@@ -578,8 +570,23 @@ body {
 .slider-image {
   display: block;
 }
+.promo-text-inner {
+  position: absolute;
+}
 .promo-title {
+  z-index: 1;
   margin-bottom: 29px;
+  position: relative;
+}
+.slider-number {
+  position: absolute;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 800;
+  font-size: 180px;
+  line-height: 30px;
+  color: #fff;
+  right: 49px;
+  top: -40px;
 }
 .promo-text {
   margin-bottom: 35px;
@@ -587,6 +594,9 @@ body {
 .promo-description {
   display: flex;
   justify-content: space-between;
+}
+.promo-description:not(.promo-description:first-child) {
+  display: none;
 }
 .services {
   margin-bottom: 173px;
@@ -614,6 +624,9 @@ body {
   right: 0;
   left: 0;
   margin: auto;
+}
+.services-item-img .services-dif-img {
+  top: 41px;
 }
 .services-item-img:hover {
   background-color: #FFC700;
@@ -942,7 +955,6 @@ body {
   line-height: 20px;
   letter-spacing: -0.02em;
   color: #000;
-  margin-bottom: 37px;
 }
 .catalog-filter-title::after {
   position: absolute;
@@ -953,8 +965,11 @@ body {
   left: 2px;
   top: -14px;
 }
-.catalog-filter-title:nth-of-type(2),
-.catalog-filter-title:last-of-type {
+.catalog-filter-title {
+  margin-bottom: 37px;
+}
+.catalog-filter-color,
+.catalog-filter-bluetooth {
   margin-bottom: 22px;
 }
 .control-label {
@@ -1046,7 +1061,7 @@ body {
   display: none;
   position: absolute;
   top: 180px;
-  right: 88px;
+  right: 104px;
 }
 .product-card-link:hover .product-card-image {
   opacity: 0.5;
@@ -1096,8 +1111,8 @@ body {
   content: '';
   position: absolute;
   top: 7px;
-  right: 0;
-  left: 0;
+  right: -14px;
+  left: -18px;
   height: 8px;
   background-color: #FFC700;
   z-index: -1;
@@ -1395,7 +1410,7 @@ body {
   width: 1160px;
   margin: 0 auto;
   padding: 38.5px 0;
-  font-family: "Raleway";
+  font-family: "Raleway",sans-serif;
   font-weight: 800;
   font-size: 20px;
   line-height: 23px;
@@ -1638,7 +1653,7 @@ body {
 .newsletter-button {
   width: 260px;
   height: 55.1px;
-  font-family: 'Raleway',serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 21px;
@@ -1755,7 +1770,7 @@ body {
   width: 510px;
   flex-wrap: wrap;
   margin-bottom: 57px;
-  margin-left: -10px;
+  margin-left: -9px;
 }
 .footer-nav-item {
   width: 148px;
