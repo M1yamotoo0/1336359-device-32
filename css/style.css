@@ -661,7 +661,7 @@ body {
   display: flex;
 }
 .catalog-span-inner {
-  padding: 19px 0px 19px 197px;
+  padding: 20px 0px 20px 197px;
   width: 497px;
   background-color: #dcdcdc;
 }
@@ -787,6 +787,9 @@ body {
 .range-toggle:focus {
   outline: none;
   border-color: #AF4FFF;
+}
+.range-toggle:focus .catalog-filter-label {
+  color: #AF4FFF;
 }
 .range-toggle:active {
   background-color: #000;
