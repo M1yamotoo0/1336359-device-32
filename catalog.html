@@ -12,10 +12,10 @@
 <body>
   <header class="main-header main-container main-catalog">
     <div class="header-catalog-container">
-      <img class="header-logo" src="img/header-logo.svg" width="145" height="36" alt="Логотип интернет-магазина Device">
+      <img class="header-logo image" src="img/header-logo.svg" width="145" height="36" alt="Логотип интернет-магазина Device">
       <div class="header-inner">
         <form class="main-search">
-          <input class="header-search" type="search" value="Поиск по сайту">
+          <input class="header-search" type="search" placeholder="Поиск по сайту">
           <button class="search-btn" type="submit">Найти</button>
         </form>
         <ul class="header-list navigation-user">
@@ -55,36 +55,36 @@
             <ul class="popover popover-cart">
               <li class="popover-content">
                 <a class="popover-link" href="#">
-                  <img class="popover-img" src="img/popover/product-1-small.jpg" alt="Иконка селфи-палки" width="41"
+                  <img class="popover-img image" src="img/popover/product-1-small.jpg" alt="Иконка селфи-палки" width="41"
                     height="43">
-                  <p class="popover-text">
+                  <p class="popover-text text">
                     Любительская<br>
                     селфи-палка
                   </p>
                 </a>
-                <button class="close-content-btn">
+                <button class="close-content-btn" type="button">
                   <span class="visually-hidden">Удалить из корзины</span>
                 </button>
               </li>
               <li class="popover-content">
                 <a class="popover-link" href="#">
-                  <img class="popover-img" src="img/popover/product-2-small.jpg" alt="Иконка селфи-палки" width="41"
+                  <img class="popover-img image" src="img/popover/product-2-small.jpg" alt="Иконка селфи-палки" width="41"
                     height="43">
-                  <p class="popover-text">
+                  <p class="popover-text text">
                     Профессиональная<br>
                     селфи-палка
                   </p>
                 </a>
-                <button class="close-content-btn">
+                <button class="close-content-btn" type="button">
                   <span class="visually-hidden">Удалить из корзины</span>
                 </button>
               </li>
               <li class="popover-products">
-                <p class="popover-products-text">Товаров: 2</p>
-                <p class="popover-products-text">Сумма: 2000 ₽</p>
+                <p class="popover-products-text text">Товаров: 2</p>
+                <p class="popover-products-text text">Сумма: 2000 ₽</p>
               </li>
               <li class="popover-btn-inner">
-                <button class="popover-btn">
+                <button class="popover-btn" type="button">
                   Открыть корзину
                 </button>
               </li>
@@ -99,6 +99,34 @@
               <span class="navigation-link-text">Каталог товаров</span>
               <div class="navigation-element"></div>
             </a>
+            <div class="navigation-catalog-inner navigation-catalog-show">
+              <div class="navigation-catalog-container">
+                <ul class="navigation-sub navigation-sub-left">
+                  <li class="navigation-sub">
+                    <a href="#" class="navigation-sub-link">Виртуальная реальность</a>
+                  </li>
+                  <li class="navigation-sub">
+                    <a href="#" class="navigation-sub-link">Моноподы для cелфи</a>
+                  </li>
+                  <li class="navigation-sub">
+                    <a href="#" class="navigation-sub-link">Экшн-камеры</a>
+                  </li>
+                </ul>
+                <ul class="navigation-sub navigation-sub-middle">
+                  <li class="navigation-sub">
+                    <a href="#" class="navigation-sub-link">Фитнес-браслеты</a>
+                  </li>
+                  <li class="navigation-sub">
+                    <a href="#" class="navigation-sub-link">Умные часы</a>
+                  </li>
+                </ul>
+                <ul class="navigation-sub navigation-sub-right">
+                  <li class="navigation-sub">
+                    <a href="#" class="navigation-sub-link">Квадрокоптеры</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </li>
         </ul>
         <div class="navigation-catalog-inner navigation-catalog-show">
@@ -144,7 +172,7 @@
   <main class="catalog-main">
     <div class="container">
       <header class="inner-header">
-        <h2 class="catalog-title title">Моноподы для селфи</h2>
+        <h1 class="catalog-title title">Моноподы для селфи</h1>
         <ol class="catalog-list">
           <li class="catalog-list-item">
             <a class="catalog-list-link" href="index.html">
@@ -178,10 +206,10 @@
               <div class="range">
                 <div class="range-scale">
                   <div class="range-bar" style="left: 0px; width: 119px">
-                    <button class="range-toggle toggle-min">
+                    <button class="range-toggle toggle-min" type="button">
                       <span class="visually-hidden">Изменить минимальную цену.</span>
                     </button>
-                    <button class="range-toggle toggle-max">
+                    <button class="range-toggle toggle-max" type="button">
                       <span class="visually-hidden">Изменить максимальную цену.</span>
                     </button>
                   </div>
@@ -189,11 +217,10 @@
                 <div class="range-wrapper-inputs">
                   <label class="catalog-filter-label">
                     <span class="catalog-filter-span">от</span>
-                    <input class="range-input" type="number" value="0"
-                      name="min-price" style="width: 15px">
+                    <input class="range-input" type="number" placeholder="0" name="min-price" style="width: 15px">
                   </label>
                   <label class="catalog-filter-label">
-                    до <input class="range-input" type="number" value="5000" name="max-price" style="width: 50px">
+                    до <input class="range-input" type="number" placeholder="5000" name="max-price" style="width: 50px">
                   </label>
                 </div>
               </div>
@@ -227,10 +254,11 @@
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input class="visually-hidden control-input" type="checkbox" name="blue">
-                    <span class="control-mark"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M10 0L3.1 6.6L0 3.6V6.9L3.2 10L10 3.3V0Z" fill="black" />
-                    </svg>
-                  </span>
+                    <span class="control-mark"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 0L3.1 6.6L0 3.6V6.9L3.2 10L10 3.3V0Z" fill="black" />
+                      </svg>
+                    </span>
                     <span class="control-label">Синий</span>
                   </label>
                 </li>
@@ -292,26 +320,26 @@
             <option value="expensive">Сначала дорогое</option>
           </select>
           <button class="visually-hidden" type="submit">Отсортировать продукты</button>
+          <div class="sort-buttons">
+            <button href="#" class="sort-button" type="button">
+              <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.5 10L0 0H11" fill="black" />
+              </svg>
+              <span class="visually-hidden">По меньшинству</span>
+            </button>
+            <button href="#" class="sort-button button-light" type="button">
+              <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.5 10L0 0H11" fill="black" />
+              </svg>
+              <span class="visually-hidden">По большинству</span>
+            </button>
+          </div>
         </form>
-        <div class="sort-buttons">
-          <a href="#" class="button">
-            <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M5.5 10L0 0H11" fill="black" />
-            </svg>
-            <span class="visually-hidden">По меньшинству</span>
-          </a>
-          <a href="#" class="button button-light">
-            <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M5.5 10L0 0H11" fill="black" />
-            </svg>
-            <span class="visually-hidden">По большинству</span>
-          </a>
-        </div>
         <ul class="product-card-list">
           <li class="product-card-item">
             <a class="product-card-link" href="#">
               <div class="product-card-image">
-                <img src="img/catalog/product-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+                <img class="image" src="img/catalog/product-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
               </div>
               <div class="product-card-inner">
                 <h3 class="product-card-title">
@@ -329,7 +357,7 @@
           <li class="product-card-item">
             <a class="product-card-link" href="#">
               <div class="product-card-image">
-                <img src="img/catalog/product-2.jpg" width="360" height="380" alt="Любительская селфи-палка">
+                <img class="image" src="img/catalog/product-2.jpg" width="360" height="380" alt="Любительская селфи-палка">
               </div>
               <div class="product-card-inner">
                 <h3 class="product-card-title">
@@ -347,7 +375,7 @@
           <li class="product-card-item">
             <a class="product-card-link" href="#">
               <div class="product-card-image">
-                <img src="img/catalog/product-3.jpg" width="360" height="380" alt="Любительская селфи-палка">
+                <img class="image" src="img/catalog/product-3.jpg" width="360" height="380" alt="Любительская селфи-палка">
               </div>
               <div class="product-card-inner">
                 <h3 class="product-card-title">
@@ -363,10 +391,10 @@
               </div>
             </a>
           </li>
-          <li class="product-card-item">
+          <li class="product-card-item new-product">
             <a class="product-card-link" href="#">
               <div class="product-card-image">
-                <img src="img/catalog/product-4.jpg" width="360" height="380" alt="Любительская селфи-палка">
+                <img class="image" src="img/catalog/product-4.jpg" width="360" height="380" alt="Любительская селфи-палка">
               </div>
               <div class="product-card-inner">
                 <h3 class="product-card-title">
@@ -383,14 +411,14 @@
           </li>
         </ul>
 
-        <button class="button pagination-show-more">Загрузить еще</button>
+        <button class="button pagination-show-more" type="button">Загрузить еще</button>
         <div class="pagination-inner">
-          <a class="pagination-link pagination-prev pagination-disabled" href="">
+          <a class="pagination-link pagination-prev pagination-disabled" href="#">
             <span class="prev">Назад</span>
           </a>
           <ul class="pagination">
             <li class="pagination-item">
-              <a class="pagination-link-number pagination-current">1</a>
+              <a class="pagination-link-number pagination-current" href="#">1</a>
             </li>
             <li class="pagination-item">
               <a class="pagination-link-number" href="#">2</a>
@@ -405,7 +433,7 @@
               <a class="pagination-link-number pagination-link-number-last" href="#">15</a>
             </li>
           </ul>
-          <a class="pagination-link pagination-next" href="">
+          <a class="pagination-link pagination-next" href="#">
             <span class="prev">Вперед</span>
           </a>
         </div>
@@ -415,7 +443,7 @@
   <footer class="main-footer">
     <div class="footer-container">
       <section class="footer-left">
-        <img class="footer-logo" src="img/footer-logo.svg" width="145" height="36"
+        <img class="footer-logo image" src="img/footer-logo.svg" width="145" height="36"
           alt="Логотип интернет-магазина Device">
         <address class="footer-address">
           Санкт-Петербург, набережная<br>реки Карповки, 5, литера П.
@@ -491,7 +519,7 @@
   </footer>
   <div class="modal-container">
     <div class="modal modal-deliver">
-      <button class="modal-close-btn">
+      <button class="modal-close-btn" type="button">
         <span class="visually-hidden">Закрыть</span>
       </button>
       <section class="modal-content">
@@ -500,28 +528,27 @@
         </h2>
         <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="modal-group-inner">
-            <p class="field-group">
+            <p class="field-group text">
               <label class="modal-form-title" for="full-name">Ваше имя:</label>
               <input class="full-name-form-field modal-field" type="text" id="full-name" name="full-name"
                 placeholder="Имя Фамилия">
               <span class="full-name-invalid field-span">Пожалуйста, представьтесь</span>
             </p>
-            <p class="field-group">
+            <p class="field-group text">
               <label class="modal-form-title" for="email">Ваш e-mail:</label>
               <input class="email-form-field modal-field" type="email" id="email" name="email"
-                value="krasotka92@mail.ru">
+                placeholder="krasotka92@mail.ru">
               <span class="email-valid field-span">Забавный у вас адрес</span>
             </p>
           </div>
           <div class="modal-group-inner">
-            <p class="field-group">
+            <p class="field-group text">
               <label class="modal-form-title" for="more">Что нужно привезти:</label>
               <input class="more-form-field modal-field" type="text" id="more" name="email"
                 placeholder="В свободной форме">
             </p>
-            <p class="field-group field-quantity">
+            <p class="field-group field-quantity text">
               <label class="modal-form-title modal-form-quantity" for="quantity">Количество:</label>
-              <span class="quantity-span">i</span>
               <button class="modal-quantity-btn quantity-minus" type="button">
                 <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M16 0H0V2H16V0Z" fill="black" />
@@ -538,13 +565,16 @@
           <button class="modal-btn" type="submit">
             Отправить
           </button>
+        </form>
+        <div class="delivery-info-inner">
+          i
           <div class="delivery-info">
-            <p class="delivery-info-text">
+            <p class="delivery-info-text text">
               Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
               к провозу багажа.
             </p>
           </div>
-        </form>
+        </div>
       </section>
     </div>
   </div>
