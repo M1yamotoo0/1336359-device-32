@@ -163,9 +163,7 @@ body {
 }
 .header-search::-moz-placeholder {
   color: rgba(0, 0, 0, 0.3);
-  opacity: 0.8;
-  font-size: 16px;
-line-height: 19px;
+  opacity: 1;
 }
 .header-search:hover::placeholder {
   color: rgba(0, 0, 0, 0.6);
@@ -1836,6 +1834,7 @@ line-height: 19px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   border: 3px solid rgba(0, 0, 0, 0.1);
+  background-color: transparent;
 }
 .newsletter-button:focus {
   border: 3px solid #AF4FFF;
@@ -2138,9 +2137,6 @@ line-height: 19px;
 .modal-field:focus {
   outline: none;
   outline: 5px solid #AF4FFF;
-}
-.modal-field:active {
-  box-shadow: 0 0 0 3px #000000;
 }
 .modal-field:not(:placeholder-shown) {
   box-shadow: 0 0 0 3px #000000;
